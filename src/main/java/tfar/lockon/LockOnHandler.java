@@ -145,8 +145,7 @@ public class LockOnHandler {
         }
     }
 
-    private static final Predicate<LivingEntity> ENTITY_PREDICATE = entity -> entity.isAlive() && entity.attackable() && entity instanceof Enemy;
-
+    private static final Predicate<LivingEntity> ENTITY_PREDICATE = entity -> entity.isAlive() && entity.attackable();
     private static int cycle = -1;
 
     public static Entity findNearby(Player player) {
